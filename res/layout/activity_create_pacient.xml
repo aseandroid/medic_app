@@ -1,0 +1,114 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlMainContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_dark"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context="ase.pdm.pdm_medical.CreatePacientActivity"
+    tools:ignore="MergeRootFrame">
+    
+    <TableLayout
+        android:id="@+id/tlMainForm"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:stretchColumns="1"
+	    android:padding="10dp">
+    
+	    <TableRow
+	        android:id="@+id/trPacientNameRow"
+	        android:orientation="horizontal"
+	        android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:paddingBottom="10dp">
+	    	<TextView 
+	    	    android:text="Nume pacient:"
+	    	    android:layout_width="fill_parent"
+		        android:layout_height="fill_parent"
+		        android:gravity="center_vertical|left"
+	    	    android:id="@+id/tvPacientName"
+	    	    android:textSize="15sp"
+	    	    android:textColor="@android:color/white"
+	    	    android:textStyle="bold" />
+	
+	    	<EditText
+	    	    android:id="@+id/etPacientName"
+	    	    android:height="30dp"
+	    	    android:width="175dp"
+	    	    android:layout_gravity="center_vertical|right"
+	    	    android:background="@drawable/rounded_corners" />
+	    </TableRow>
+	    
+	    <TableRow
+	        android:id="@+id/trPacientGenderRow"
+	        android:orientation="horizontal"
+	        android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:paddingBottom="10dp">
+	    	<TextView 
+	    	    android:text="Sex:"
+	    	    android:layout_width="fill_parent"
+		        android:layout_height="fill_parent"
+		        android:gravity="center_vertical|left"
+	    	    android:id="@+id/tvPacientGender"
+	    	    android:textSize="15sp"
+	    	    android:textColor="@android:color/white"
+	    	    android:textStyle="bold" />
+	    	<EditText
+	    	    android:id="@+id/etPacientGender"
+	    	    android:height="30dp"
+	    	    android:width="175dp"
+	    	    android:layout_gravity="center_vertical|right"
+	    	    android:background="@drawable/rounded_corners" />
+	    </TableRow>
+	    
+	    <TableRow
+	        android:id="@+id/trPacientBirthDayRow"
+	        android:orientation="horizontal"
+	        android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:paddingBottom="10dp">
+	    	<TextView 
+	    	    android:text="Data nasterii:"
+	    	    android:layout_width="fill_parent"
+		        android:layout_height="fill_parent"
+		        android:gravity="center_vertical|left"
+	    	    android:id="@+id/tvPacientBirthDay"
+	    	    android:textSize="15sp"
+	    	    android:textColor="@android:color/white"
+	    	    android:textStyle="bold" />
+	    	<EditText
+	    	    android:id="@+id/etPacientBirthDay"
+	    	    android:height="30dp"
+	    	    android:width="175dp"
+	    	    android:layout_gravity="center_vertical|right"
+	    	    android:background="@drawable/rounded_corners" /> 
+	    </TableRow>
+	    
+	    <TableRow
+	        android:id="@+id/trPacientWeightRow"
+	        android:orientation="horizontal"
+	        android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:paddingBottom="10dp">
+	    	<TextView 
+	    	    android:text="Greutate (kg):"
+	    	    android:layout_width="fill_parent"
+		        android:layout_height="fill_parent"
+		        android:gravity="center_vertical|left"
+	    	    android:id="@+id/tvPacientWeight"
+	    	    android:textSize="15sp"
+	    	    android:textColor="@android:color/white"
+	    	    android:textStyle="bold" />
+	    	<EditText
+	    	    android:id="@+id/etPacientWeight"
+	    	    android:height="30dp"
+	    	    android:width="175dp"
+	    	    android:layout_gravity="center_vertical|right"
+	    	    android:background="@drawable/rounded_corners" />
+	    </TableRow>
+    
+    </TableLayout>
+    
+</RelativeLayout>

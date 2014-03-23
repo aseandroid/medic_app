@@ -22,6 +22,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="ase.pdm.pdm_medical.CreatePacientActivity"
+            android:label="@string/title_activity_create_pacient" >
+        </activity>
     </application>
 
 </manifest>

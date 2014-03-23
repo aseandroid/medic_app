@@ -6,7 +6,7 @@
     android:background="@android:color/background_dark"
     android:orientation="vertical"
     tools:context="ase.pdm.pdm_medical.MainActivity"
-    android:padding="15dp"
+    android:padding="10dp"
     tools:ignore="MergeRootFrame" >
 		
     <LinearLayout
