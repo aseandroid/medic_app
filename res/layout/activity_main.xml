@@ -1,7 +1,60 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/container"
+    android:id="@+id/llMainContainer"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/background_dark"
+    android:orientation="vertical"
     tools:context="ase.pdm.pdm_medical.MainActivity"
-    tools:ignore="MergeRootFrame" />
+    android:padding="15dp"
+    tools:ignore="MergeRootFrame" >
+		
+    <LinearLayout
+        android:id="@+id/llCreatePatient"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:padding="5dp">
+	    <ImageButton
+	        android:id="@+id/ibCreatePatient"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:background="@android:color/background_dark"
+	        android:src="@drawable/ic_create_patient" />
+	    <TextView
+	        android:id="@+id/tvCreatePatient"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:text="@string/create_patient_caption"
+	        android:textColor="@android:color/white"
+	        android:textSize="15sp"
+	        android:textStyle="bold"
+	        android:paddingLeft="10dp"
+	        android:gravity="center_vertical" />
+    </LinearLayout>
+    
+	<LinearLayout
+	    android:id="@+id/llSelectPatient"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:padding="5dp">
+	    <ImageButton
+	        android:id="@+id/ibSelectPatient"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:background="@android:color/background_dark"
+	        android:src="@drawable/ic_select_patient" />
+	    <TextView
+	        android:id="@+id/tvSelectPatient"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:text="@string/select_patient_caption"
+	        android:textColor="@android:color/white"
+	        android:textSize="15sp"
+	        android:textStyle="bold"
+	        android:paddingLeft="10dp"
+	        android:gravity="center_vertical" />
+    </LinearLayout>
+
+</LinearLayout>
