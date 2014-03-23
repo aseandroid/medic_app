@@ -78,8 +78,8 @@
 	    	    android:textSize="15sp"
 	    	    android:textColor="@android:color/white"
 	    	    android:textStyle="bold" />
-	    	<EditText
-	    	    android:id="@+id/etPacientBirthDay"
+	    	<DatePicker
+	    	    android:id="@+id/dpPacientBirthDay"
 	    	    android:height="30dp"
 	    	    android:width="175dp"
 	    	    android:layout_gravity="center_vertical|right"
@@ -103,7 +103,8 @@
 	    	    android:textStyle="bold" />
 	    	<EditText
 	    	    android:id="@+id/etPacientWeight"
-	    	    android:height="30dp"
+	    	    android:inputType="number"
+	    	    android:height="40dp"
 	    	    android:width="175dp"
 	    	    android:layout_gravity="center_vertical|right"
 	    	    android:background="@drawable/rounded_corners" />
