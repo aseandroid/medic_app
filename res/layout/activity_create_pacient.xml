@@ -33,9 +33,10 @@
 	    	    android:textStyle="bold" />
 	
 	    	<EditText
-	    	    android:id="@+id/etPacientName"
+	    	    android:id="@+id/ettPacientName"
 	    	    android:height="30dp"
 	    	    android:width="175dp"
+	    	    android:inputType="text"
 	    	    android:layout_gravity="center_vertical|right"
 	    	    android:background="@drawable/rounded_corners" />
 	    </TableRow>
@@ -56,9 +57,10 @@
 	    	    android:textColor="@android:color/white"
 	    	    android:textStyle="bold" />
 	    	<EditText
-	    	    android:id="@+id/etPacientGender"
+	    	    android:id="@+id/ettPacientGender"
 	    	    android:height="30dp"
 	    	    android:width="175dp"
+	    	    android:inputType="text"
 	    	    android:layout_gravity="center_vertical|right"
 	    	    android:background="@drawable/rounded_corners" />
 	    </TableRow>
@@ -78,10 +80,12 @@
 	    	    android:textSize="15sp"
 	    	    android:textColor="@android:color/white"
 	    	    android:textStyle="bold" />
-	    	<DatePicker
-	    	    android:id="@+id/dpPacientBirthDay"
+	    	<EditText
+	    	    android:id="@+id/ettPacientBirthDay"
+	    	    android:focusable="false"
 	    	    android:height="30dp"
 	    	    android:width="175dp"
+	    	    android:inputType="text"
 	    	    android:layout_gravity="center_vertical|right"
 	    	    android:background="@drawable/rounded_corners" /> 
 	    </TableRow>
@@ -102,7 +106,7 @@
 	    	    android:textColor="@android:color/white"
 	    	    android:textStyle="bold" />
 	    	<EditText
-	    	    android:id="@+id/etPacientWeight"
+	    	    android:id="@+id/etnPacientWeight"
 	    	    android:inputType="number"
 	    	    android:height="40dp"
 	    	    android:width="175dp"

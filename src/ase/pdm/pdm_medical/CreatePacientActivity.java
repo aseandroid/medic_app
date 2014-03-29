@@ -1,15 +1,11 @@
 package ase.pdm.pdm_medical;
 
-import android.support.v7.app.ActionBarActivity;
-import android.support.v7.app.ActionBar;
-import android.support.v4.app.Fragment;
 import android.os.Bundle;
-import android.view.LayoutInflater;
+import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.view.ViewGroup;
-import android.os.Build;
+import android.widget.EditText;
+import ase.pdm.listeners.onclick.EttPatientBirthDayListener;
 
 public class CreatePacientActivity extends ActionBarActivity {
 
@@ -17,6 +13,9 @@ public class CreatePacientActivity extends ActionBarActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_create_pacient);
+
+		final EditText ettPacientBirthDay = (EditText) findViewById(R.id.ettPacientBirthDay);
+		ettPacientBirthDay.setOnClickListener(new EttPatientBirthDayListener(ettPacientBirthDay));
 	}
 
 	@Override
