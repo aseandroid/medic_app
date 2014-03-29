@@ -4,8 +4,8 @@
     <string name="app_name">PDM_Medical</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
-    <string name="create_patient_caption">Adauga pacient nou</string>
-    <string name="select_patient_caption">Selecteaza pacient existent</string>
-    <string name="title_activity_create_pacient">CreatePacientActivity</string>
+    <string name="create_patient_caption">Adauga Patient nou</string>
+    <string name="select_patient_caption">Selecteaza Patient existent</string>
+    <string name="title_activity_create_Patient">CreatePatientActivity</string>
 
 </resources>

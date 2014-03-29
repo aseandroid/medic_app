@@ -6,7 +6,7 @@
     android:background="@android:color/background_dark"
     android:orientation="vertical"
     android:padding="10dp"
-    tools:context="ase.pdm.pdm_medical.CreatePacientActivity"
+    tools:context="ase.pdm.pdm_medical.CreatePatientActivity"
     tools:ignore="MergeRootFrame">
     
     <TableLayout
@@ -17,23 +17,23 @@
 	    android:padding="10dp">
     
 	    <TableRow
-	        android:id="@+id/trPacientNameRow"
+	        android:id="@+id/trPatientNameRow"
 	        android:orientation="horizontal"
 	        android:layout_width="wrap_content"
 	    	android:layout_height="wrap_content"
 	    	android:paddingBottom="10dp">
 	    	<TextView 
-	    	    android:text="Nume pacient:"
+	    	    android:text="Nume Patient:"
 	    	    android:layout_width="fill_parent"
 		        android:layout_height="fill_parent"
 		        android:gravity="center_vertical|left"
-	    	    android:id="@+id/tvPacientName"
+	    	    android:id="@+id/tvPatientName"
 	    	    android:textSize="15sp"
 	    	    android:textColor="@android:color/white"
 	    	    android:textStyle="bold" />
 	
 	    	<EditText
-	    	    android:id="@+id/ettPacientName"
+	    	    android:id="@+id/ettPatientName"
 	    	    android:height="30dp"
 	    	    android:width="175dp"
 	    	    android:inputType="text"
@@ -42,7 +42,7 @@
 	    </TableRow>
 	    
 	    <TableRow
-	        android:id="@+id/trPacientGenderRow"
+	        android:id="@+id/trPatientGenderRow"
 	        android:orientation="horizontal"
 	        android:layout_width="wrap_content"
 	    	android:layout_height="wrap_content"
@@ -52,12 +52,12 @@
 	    	    android:layout_width="fill_parent"
 		        android:layout_height="fill_parent"
 		        android:gravity="center_vertical|left"
-	    	    android:id="@+id/tvPacientGender"
+	    	    android:id="@+id/tvPatientGender"
 	    	    android:textSize="15sp"
 	    	    android:textColor="@android:color/white"
 	    	    android:textStyle="bold" />
 	    	<EditText
-	    	    android:id="@+id/ettPacientGender"
+	    	    android:id="@+id/ettPatientGender"
 	    	    android:height="30dp"
 	    	    android:width="175dp"
 	    	    android:inputType="text"
@@ -66,7 +66,7 @@
 	    </TableRow>
 	    
 	    <TableRow
-	        android:id="@+id/trPacientBirthDayRow"
+	        android:id="@+id/trPatientBirthDayRow"
 	        android:orientation="horizontal"
 	        android:layout_width="wrap_content"
 	    	android:layout_height="wrap_content"
@@ -76,12 +76,12 @@
 	    	    android:layout_width="fill_parent"
 		        android:layout_height="fill_parent"
 		        android:gravity="center_vertical|left"
-	    	    android:id="@+id/tvPacientBirthDay"
+	    	    android:id="@+id/tvPatientBirthDay"
 	    	    android:textSize="15sp"
 	    	    android:textColor="@android:color/white"
 	    	    android:textStyle="bold" />
 	    	<EditText
-	    	    android:id="@+id/ettPacientBirthDay"
+	    	    android:id="@+id/ettPatientBirthDay"
 	    	    android:focusable="false"
 	    	    android:height="30dp"
 	    	    android:width="175dp"
@@ -91,7 +91,7 @@
 	    </TableRow>
 	    
 	    <TableRow
-	        android:id="@+id/trPacientWeightRow"
+	        android:id="@+id/trPatientWeightRow"
 	        android:orientation="horizontal"
 	        android:layout_width="wrap_content"
 	    	android:layout_height="wrap_content"
@@ -101,18 +101,29 @@
 	    	    android:layout_width="fill_parent"
 		        android:layout_height="fill_parent"
 		        android:gravity="center_vertical|left"
-	    	    android:id="@+id/tvPacientWeight"
+	    	    android:id="@+id/tvPatientWeight"
 	    	    android:textSize="15sp"
 	    	    android:textColor="@android:color/white"
 	    	    android:textStyle="bold" />
 	    	<EditText
-	    	    android:id="@+id/etnPacientWeight"
+	    	    android:id="@+id/etnPatientWeight"
 	    	    android:inputType="number"
 	    	    android:height="40dp"
 	    	    android:width="175dp"
 	    	    android:layout_gravity="center_vertical|right"
 	    	    android:background="@drawable/rounded_corners" />
 	    </TableRow>
+	    
+	    <TableRow
+	       android:id="@+id/trSubmitPatientRow"
+	       android:orientation="horizontal"
+	       android:layout_width="wrap_content"
+	       android:layout_height="wrap_content"
+	       android:paddingBottom="10dp">
+	    	<Button 
+	    	    android:id="@+id/bSubmitPatient"
+	    	    android:text="Creaza Patient" />    
+	   	</TableRow>
     
     </TableLayout>
     

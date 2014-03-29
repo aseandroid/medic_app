@@ -4,25 +4,38 @@ import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
 import android.widget.EditText;
+import ase.pdm.listeners.onclick.BSubmitPatientListener;
 import ase.pdm.listeners.onclick.EttPatientBirthDayListener;
 
-public class CreatePacientActivity extends ActionBarActivity {
+public class CreatePatientActivity extends ActionBarActivity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_create_pacient);
-
-		final EditText ettPacientBirthDay = (EditText) findViewById(R.id.ettPacientBirthDay);
-		ettPacientBirthDay.setOnClickListener(new EttPatientBirthDayListener(ettPacientBirthDay));
+		setContentView(R.layout.activity_create_patient);
+		
+		EditText ettPatientName = (EditText) findViewById(R.id.ettPatientName);
+		EditText ettPatientGender = (EditText) findViewById(R.id.ettPatientGender);
+		EditText ettPatientBirthDay = (EditText) findViewById(R.id.ettPatientBirthDay);
+		EditText etnPatientWeight = (EditText) findViewById(R.id.etnPatientWeight);		
+		Button bSubmitPatient = (Button) findViewById(R.id.bSubmitPatient);
+		
+		ettPatientBirthDay.setOnClickListener(new EttPatientBirthDayListener(ettPatientBirthDay));
+		bSubmitPatient.setOnClickListener(new BSubmitPatientListener(
+				ettPatientName,
+				ettPatientGender,
+				ettPatientBirthDay,
+				etnPatientWeight
+		));
 	}
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 
 		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.create_pacient, menu);
+		getMenuInflater().inflate(R.menu.create_patient, menu);
 		return true;
 	}
 

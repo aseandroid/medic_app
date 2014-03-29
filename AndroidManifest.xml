@@ -23,8 +23,8 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="ase.pdm.pdm_medical.CreatePacientActivity"
-            android:label="@string/title_activity_create_pacient" >
+            android:name="ase.pdm.pdm_medical.CreatePatientActivity"
+            android:label="@string/title_activity_create_Patient" >
         </activity>
     </application>
 
