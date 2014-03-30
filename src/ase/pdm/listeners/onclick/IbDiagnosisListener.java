@@ -3,19 +3,19 @@ package ase.pdm.listeners.onclick;
 import android.app.Activity;
 import android.content.Intent;
 import android.view.View;
-import ase.pdm.pdm_medical.SelectPactientActivity;
+import ase.pdm.pdm_medical.DiagnosisActivity;
 
 
-public class IbSelectPactientListener implements View.OnClickListener {
+public class IbDiagnosisListener implements View.OnClickListener {
 	private Activity activity;
 	
-	public IbSelectPactientListener(Activity activity) {
+	public IbDiagnosisListener(Activity activity) {
 		this.activity = activity;
 	}
 
 	@Override
 	public void onClick(View v) {
-		Intent intent = new Intent(v.getContext(), SelectPactientActivity.class);
+		Intent intent = new Intent(v.getContext(), DiagnosisActivity.class);
 		activity.startActivityForResult(intent, 0);
 	}
 }
