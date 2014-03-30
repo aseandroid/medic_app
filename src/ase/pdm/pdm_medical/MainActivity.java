@@ -5,9 +5,11 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.ImageButton;
-import ase.pdm.db.models.Patient;
+import android.widget.LinearLayout;
 import ase.pdm.listeners.onclick.IbCreatePatientListener;
+import ase.pdm.listeners.onclick.IbDiagnosisListener;
+import ase.pdm.listeners.onclick.IbSearchHospitalsListener;
+import ase.pdm.listeners.onclick.IbSelectPactientListener;
 
 public class MainActivity extends ActionBarActivity {
 
@@ -16,9 +18,17 @@ public class MainActivity extends ActionBarActivity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 
-		ImageButton ibCreatePatient = (ImageButton) findViewById(R.id.ibCreatePatient);
+		LinearLayout ibCreatePatient = (LinearLayout) findViewById(R.id.llCreatePatient);
 		ibCreatePatient.setOnClickListener(new IbCreatePatientListener(this));
-
+		
+		LinearLayout ibSelectPactient = (LinearLayout) findViewById(R.id.llSelectPatient);
+		ibSelectPactient.setOnClickListener(new IbSelectPactientListener(this));
+		
+		LinearLayout ibSelectDiagnosis = (LinearLayout) findViewById(R.id.llDiagnosis);
+		ibSelectDiagnosis.setOnClickListener(new IbDiagnosisListener(this));
+		
+		LinearLayout ibSearchHospitals = (LinearLayout) findViewById(R.id.llSearchHospitals);
+		ibSearchHospitals.setOnClickListener(new IbSearchHospitalsListener(this));
 
 	}
 
