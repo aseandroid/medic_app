@@ -6,7 +6,6 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ImageButton;
-import ase.pdm.db.models.Patient;
 import ase.pdm.listeners.onclick.IbCreatePatientListener;
 
 public class MainActivity extends ActionBarActivity {
