@@ -18,8 +18,6 @@ public class MainActivity extends ActionBarActivity {
 
 		ImageButton ibCreatePatient = (ImageButton) findViewById(R.id.ibCreatePatient);
 		ibCreatePatient.setOnClickListener(new IbCreatePatientListener(this));
-
-
 	}
 
 	@Override
