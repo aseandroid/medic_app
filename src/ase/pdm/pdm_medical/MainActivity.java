@@ -21,6 +21,8 @@ public class MainActivity extends ActionBarActivity {
 		
 		Patient patient = new Patient(this);
 		patient.findAll();
+		
+		System.out.println("sdas");
 	}
 
 	@Override
