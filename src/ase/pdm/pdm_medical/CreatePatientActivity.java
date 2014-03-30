@@ -27,7 +27,8 @@ public class CreatePatientActivity extends ActionBarActivity {
 				ettPatientName,
 				ettPatientGender,
 				ettPatientBirthDay,
-				etnPatientWeight
+				etnPatientWeight,
+				this
 		));
 	}
 

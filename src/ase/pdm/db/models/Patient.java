@@ -1,27 +1,37 @@
 package ase.pdm.db.models;
-
 import android.content.Context;
-import android.database.sqlite.SQLiteDatabase.CursorFactory;
-import ase.pdm.db.helpers.SqliteActiveRecord;
 
-public class Patient extends SqliteActiveRecord {
+public class Patient extends Model {
 	
-	public Patient(Context context, String name, CursorFactory factory,
-			int version) {
-		super(context, name, factory, version);
+	public Patient(Context context) {
+		super(context);
+		
+		//tipuri pentru cursorul sql
+		types.put("Id", "Long");
+		types.put("Name", "String");
+		types.put("Weight", "String");
+		types.put("Gender", "String");
+		types.put("BirthDay", "String");
+		
+		//tipuri primite de setteri
+		classTypes.put("Id", long.class);
+		classTypes.put("Name", String.class);
+		classTypes.put("Weight", String.class);
+		classTypes.put("Gender", String.class);
+		classTypes.put("BirthDay", String.class);
 	}
 
-	private long Id;
-	private String Name;
-	private String Gender;
-	private String BirthDay;
-	private float Weight;
+	protected long Id;
+	protected String Name;
+	protected String Gender;
+	protected String BirthDay;
+	protected String Weight;
 
-	public float getWeight() {
+	public String getWeight() {
 		return this.Weight;
 	}
 
-	public void setWeight(float weight) {
+	public void setWeight(String weight) {
 		this.Weight = weight;
 	}
 

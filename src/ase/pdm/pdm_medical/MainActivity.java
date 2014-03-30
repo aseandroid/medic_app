@@ -1,11 +1,13 @@
 package ase.pdm.pdm_medical;
 
 import android.support.v7.app.ActionBarActivity;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ImageButton;
+import ase.pdm.db.helpers.SqliteHelper;
 import ase.pdm.db.models.Patient;
 import ase.pdm.listeners.onclick.IbCreatePatientListener;
 
@@ -18,6 +20,9 @@ public class MainActivity extends ActionBarActivity {
 
 		ImageButton ibCreatePatient = (ImageButton) findViewById(R.id.ibCreatePatient);
 		ibCreatePatient.setOnClickListener(new IbCreatePatientListener(this));
+		
+		Patient patient = new Patient(this);
+		patient.findAll();
 	}
 
 	@Override
