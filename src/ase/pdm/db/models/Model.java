@@ -25,7 +25,27 @@ public class Model {
 	public Model(Context context) {
 		this.context = context;
 		this.helper = new SqliteHelper(this.context);
+	}
+
+	public Context getModelContext() {
+		return this.context;
+	}
+
+	public SqliteHelper getDbHelper() {
+		return this.helper;
+	}
+
+	public SQLiteDatabase getDbConnection() {
+		return this.db;
+	}
+
+	public void open() {
 		this.db = helper.getWritableDatabase();
+	}
+
+	public void close() {
+		this.db.close();
+		this.db = null;
 	}
 
 	public HashMap<String, Object> getAttributes() {
@@ -93,21 +113,28 @@ public class Model {
 		Cursor cursor = db.query(className, columns, null, null, null, null,
 				null);
 		cursor.moveToFirst();
-		while (cursor != null && !cursor.isAfterLast()) {	
+		while (cursor != null && !cursor.isAfterLast()) {
 			try {
-				Model instance = (Model) Class.forName(classNameWithPackage).getConstructor(Context.class).newInstance(context);
+				Model instance = (Model) Class.forName(classNameWithPackage)
+						.getConstructor(Context.class).newInstance(context);
 				for (int j = 0; j < attributesCount && cursor != null; j++) {
 					String columnName = cursor.getColumnName(j);
 					String columnType = this.types.get(columnName);
-					Class<?> columnTypeClass = (Class<?>) this.classTypes.get(columnName);
+					Class<?> columnTypeClass = (Class<?>) this.classTypes
+							.get(columnName);
 
 					String columnNameSetter = "set" + columnName;
 					String columnTypeGetter = "get" + columnType;
 
-					Method getterMethod = Class.forName(cursor.getClass().getName()).getMethod(columnTypeGetter, int.class);
-					Method setterMethod = Class.forName(instance.getClass().getName()).getMethod(columnNameSetter, columnTypeClass);
-					
-					setterMethod.invoke(instance, getterMethod.invoke(cursor, j));				
+					Method getterMethod = Class.forName(
+							cursor.getClass().getName()).getMethod(
+							columnTypeGetter, int.class);
+					Method setterMethod = Class.forName(
+							instance.getClass().getName()).getMethod(
+							columnNameSetter, columnTypeClass);
+
+					setterMethod.invoke(instance,
+							getterMethod.invoke(cursor, j));
 				}
 				list.put(cursor.getPosition(), instance);
 			} catch (NoSuchMethodException e) {
@@ -134,8 +161,6 @@ public class Model {
 		}
 		cursor.close();
 		cursor = null;
-		db.close();
-		db = null;
 		return list;
 	}
 

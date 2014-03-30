@@ -35,11 +35,13 @@ public class BSubmitPatientListener  implements View.OnClickListener {
 		String patientWeight = this.etnPatientWeight.getText().toString();
 		
 		Patient patient = new Patient(this.activity);
+		patient.open();
 		patient.setName(patientName);
 		patient.setGender(patientGender);
 		patient.setBirthDay(patientBirthDay);
 		patient.setWeight(patientWeight);
 		patient.save();
+		patient.close();
 	}
 
 }
