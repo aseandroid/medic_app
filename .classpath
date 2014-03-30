@@ -5,7 +5,7 @@
 	<classpathentry kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
 	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
 	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.DEPENDENCIES"/>
-	<classpathentry kind="lib" path="/home/stefan/Downloads/adt-bundle-linux-x86_64-20131030/eclipse/dropins/com.questoid.sqlitemanager_1.0.0.jar"/>
-	<classpathentry kind="lib" path="/home/stefan/android/PDM_Medical/libs/reflections-0.9.9-RC1-uberjar.jar"/>
+	<classpathentry kind="lib" path="C:/Users/eremiaa/Desktop/medic_app/libs/reflections-0.9.9-RC1-uberjar.jar"/>
+	<classpathentry kind="lib" path="C:/Users/eremiaa/Desktop/medic_app/libs/android-support-v4.jar"/>
 	<classpathentry kind="output" path="bin/classes"/>
 </classpath>
