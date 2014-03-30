@@ -57,4 +57,52 @@
 	        android:gravity="center_vertical" />
     </LinearLayout>
 
+	<LinearLayout
+	    android:id="@+id/llDiagnosis"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:padding="5dp">
+	    <ImageButton
+	        android:id="@+id/ibDiagnosis"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:background="@android:color/background_dark"
+	        android:src="@drawable/ic_diagnosis" />
+	    <TextView
+	        android:id="@+id/tvDiagnosis"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:text="@string/diagnosis_caption"
+	        android:textColor="@android:color/white"
+	        android:textSize="15sp"
+	        android:textStyle="bold"
+	        android:paddingLeft="10dp"
+	        android:gravity="center_vertical" />
+    </LinearLayout>
+    
+    <LinearLayout
+	    android:id="@+id/llSearchHospitals"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:padding="5dp">
+	    <ImageButton
+	        android:id="@+id/ibSearchHospitals"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:background="@android:color/background_dark"
+	        android:src="@drawable/ic_search_hospitals" />
+	    <TextView
+	        android:id="@+id/tvSearchHospitals"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:text="@string/search_hospitals_caption"
+	        android:textColor="@android:color/white"
+	        android:textSize="15sp"
+	        android:textStyle="bold"
+	        android:paddingLeft="10dp"
+	        android:gravity="center_vertical" />
+    </LinearLayout>
+
 </LinearLayout>
