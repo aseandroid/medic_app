@@ -1134,15 +1134,18 @@ containing a value of this type.
         public static final int activity_diagnosis=0x7f030018;
         public static final int activity_main=0x7f030019;
         public static final int activity_medical_locations=0x7f03001a;
-        public static final int fragment_diagnosis=0x7f03001b;
-        public static final int fragment_medical_locations=0x7f03001c;
-        public static final int support_simple_spinner_dropdown_item=0x7f03001d;
+        public static final int activity_select_pactient=0x7f03001b;
+        public static final int fragment_diagnosis=0x7f03001c;
+        public static final int fragment_medical_locations=0x7f03001d;
+        public static final int fragment_select_pactient=0x7f03001e;
+        public static final int support_simple_spinner_dropdown_item=0x7f03001f;
     }
     public static final class menu {
         public static final int create_patient=0x7f0c0000;
         public static final int diagnosis=0x7f0c0001;
         public static final int main=0x7f0c0002;
         public static final int medical_locations=0x7f0c0003;
+        public static final int select_pactient=0x7f0c0004;
     }
     public static final class string {
         /**  Content description for the action bar "home" affordance. [CHAR LIMIT=NONE] 
@@ -1195,6 +1198,7 @@ containing a value of this type.
         public static final int title_activity_create_Patient=0x7f0a0012;
         public static final int title_activity_diagnosis=0x7f0a0014;
         public static final int title_activity_medical_locations=0x7f0a0013;
+        public static final int title_activity_select_pactient=0x7f0a0017;
     }
     public static final class style {
         /** 

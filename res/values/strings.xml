@@ -11,5 +11,6 @@
     <string name="title_activity_diagnosis">DiagnosisActivity</string>
     <string name="diagnosis_caption">Diagnostic Pacient</string>
     <string name="search_hospitals_caption">Cautare Spitale</string>
+    <string name="title_activity_select_pactient">SelectPactientActivity</string>
 
 </resources>
