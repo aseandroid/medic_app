@@ -13,6 +13,6 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="119dp"
-        android:text="TextView" />
+        android:text="@string/hello_world" />
 
 </RelativeLayout>
