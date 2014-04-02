@@ -26,18 +26,23 @@
             android:name="ase.pdm.pdm_medical.CreatePatientActivity"
             android:label="@string/title_activity_create_Patient" >
         </activity>
+      
         <activity
-            android:name="ase.pdm.pdm_medical.SelectPatientActivity"
-            android:label="@string/title_activity_select_Patient" >
+            android:name="ase.pdm.pdm_medical.SelectPactientActivity"
+            android:label="@string/title_activity_select_pactient" >
         </activity>
+        
+         <activity
+            android:name="ase.pdm.pdm_medical.DiagnosisActivity"
+            android:label="@string/title_activity_diagnosis" >
+        </activity>
+        
         <activity
             android:name="ase.pdm.pdm_medical.MedicalLocationsActivity"
             android:label="@string/title_activity_medical_locations" >
         </activity>
-        <activity
-            android:name="ase.pdm.pdm_medical.DiagnosisActivity"
-            android:label="@string/title_activity_diagnosis" >
-        </activity>
+        
+        
     </application>
 
 </manifest>
